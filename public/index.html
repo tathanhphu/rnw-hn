@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#008474">
+    <title>Hacker News</title>
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <!-- Preconnect to API -->
+    <link rel="preconnect" href="https://api.hnpwa.com/" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+
+      noscript,
+      #root {
+        display: flex;
+        min-height: 100vh;
+        background-color: #f2f3f5;
+        position: relative;
+      }
+
+      #root:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 56px;
+        background: #008474;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+      }
+
+      noscript {
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

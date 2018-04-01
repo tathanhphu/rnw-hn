@@ -1,0 +1,28 @@
+{
+  "name": "rnw-hn",
+  "author": "Johan Holmerin",
+  "license": "MIT",
+  "dependencies": {
+    "lodash-es": "^4.17.8",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-native-web": "^0.5.2"
+  },
+  "devDependencies": {
+    "cra-append-sw": "^2.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "1.11.1",
+    "react-scripts": "1.1.1",
+    "source-map-explorer": "^1.5.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build && cra-append-sw ./src/sw-api.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": ["prettier --write", "git add"]
+  }
+}
